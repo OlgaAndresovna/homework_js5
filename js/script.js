@@ -12,7 +12,7 @@ const numbers = {
 console.log(Object.values(numbers).filter(element => element >= 3));
 */
 
-/*Задача 2*/
+/*Задача 2
 const post = {
     author: "John", // вывести этот текст
     postId: 23,
@@ -42,3 +42,23 @@ console.log(post.author);
 console.log(post.comments[0].rating.dislikes);
 console.log(post.comments[1].userId);
 console.log(post.comments[1].text);
+*/
+
+/*Задача 3*/
+const products = [
+    {
+        id: 3,
+        price: 200,
+    },
+    {
+        id: 4,
+        price: 900,
+    },
+    {
+        id: 1,
+        price: 1000,
+    },
+];
+
+products.forEach(element => element.price = element.price - element.price * 0.15);
+console.log(products);
