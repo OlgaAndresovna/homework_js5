@@ -64,7 +64,7 @@ products.forEach(element => element.price = element.price - element.price * 0.15
 console.log(products);
 */
 
-/*Задача 4*/
+/*Задача 4
 
 const products = [
     {
@@ -95,5 +95,16 @@ const products = [
 
 const step1filter = products.filter(products => products.photos != undefined);
 console.log(step1filter.filter(step1filter => step1filter.photos.length > 0))
+*/
 
+/*Задача 5*/
+const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
 
+let object = {
+};
+for (let i = 0; i < en.length; i++) {
+    object[en[i]] = ru[i];
+
+}
+console.log(object);
